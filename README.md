@@ -72,6 +72,13 @@ portfolio-ana/
 ├── script.js
 └── README.md
 ```
+## Protótipos e Wireframes
+
+O protótipo visual do portfólio foi desenvolvido no Canva,
+contendo as telas de Home, Currículo, Projetos,
+Experiências e Contato.
+
+[Visualizar o protótipo completo em PDF](docs/wireframes/Portifólio.pdf)
 
 ## Instalação e execução local
 
