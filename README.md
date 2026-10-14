@@ -2,7 +2,7 @@
 
 > Site pessoal desenvolvido para apresentar minha formação, habilidades, interesses, projetos e experiências acadêmicas.
 >
-> 🎓 **Projeto da disciplina de Desenvolvimento e Integração de Aplicações Web (DIW)** — Ciência da Computação | PUC Minas.
+> 🎓 **Projeto da disciplina de Desenvolvimento de Interfaces Web (DIW)** — Ciência da Computação | PUC Minas.
 
 ---
 
