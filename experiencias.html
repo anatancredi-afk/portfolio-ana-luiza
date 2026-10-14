@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <!-- Ajuda na responsividade -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Projetos de Ana Luiza Tancredi em Ciência da Computação.">
+  <title>Ana Tancredi | Experiências</title>
+  <!-- Arquivos que controlam o visual e as interações do site -->
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">Ana Tancredi</a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav" data-i18n="menu">Menu</button>
+    <nav id="main-nav" class="main-nav" aria-label="Navegação principal">
+      <a href="index.html" data-i18n="navHome">HOME</a>
+      <!-- Links do menu para as cinco páginas do site -->
+      <a href="curriculo.html" data-i18n="navResume">CURRÍCULO</a>
+      <a href="projetos.html" data-i18n="navProjects">PROJETOS</a>
+      <a class="active" aria-current="page" href="experiencias.html" data-i18n="navExperience">EXPERIÊNCIAS</a>
+      <a href="contato.html" data-i18n="navContact">CONTATO</a>
+    </nav>
+    <div class="languages" aria-label="Idioma">
+      <button type="button" class="selected" data-lang="pt" aria-pressed="true">PT</button>
+      <button type="button" data-lang="en" aria-pressed="false">EN</button>
+    </div>
+  </header>
+  <!-- Página Experiências: linha do tempo com as atividades e suas datas -->
+  <main class="experience-page">
+    <h1 class="script-title brush" data-i18n="experienceTitle">Experiências</h1>
+    <p class="experience-intro" data-i18n="experienceSubtitle">Vivências que ampliam meu olhar e ajudam a construir minha trajetória profissional.</p>
+    <div class="experience-timeline">
+      <!-- Cada article representa uma experiência na linha do tempo -->
+      <article class="experience-entry"><p class="experience-date" data-i18n="compDate">Setembro/2026</p><div class="experience-body"><h2 data-i18n="compTitle">Ingresso na COMP</h2><h3 data-i18n="compOrg">Empresa Júnior de Computação da PUC Minas</h3><p data-i18n="compDesc">Empresa júnior de Computação da PUC Minas dedicada ao desenvolvimento de soluções tecnológicas para clientes reais. Uma oportunidade de aplicar conhecimentos acadêmicos na prática, desenvolver habilidades técnicas e profissionais e vivenciar o trabalho colaborativo no mercado de tecnologia.</p><div class="experience-tags"><span data-i18n="compTag1">Processo seletivo</span><span data-i18n="compTag2">Aprendizado</span><span data-i18n="compTag3">Desenvolvimento profissional</span></div>
+      <!-- Link externo: target abre em nova aba e rel protege a navegação -->
+      <a class="social-icon" href="https://www.instagram.com/puccomp/" target="_blank" rel="noopener noreferrer" aria-label="Instagram da COMP"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><rect x="2.5" y="2.5" width="19" height="19" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.7" cy="6.4" r="1" fill="currentColor" stroke="none"/></svg></a></div></article>
+      <article class="experience-entry"><p class="experience-date" data-i18n="teacherDate">2023 - Atualmente</p><div class="experience-body"><h2 data-i18n="teacherTitle">Professora Escola Bíblica</h2><h3 data-i18n="teacherOrg">Oitava Igreja Presbiteriana &amp; Igreja Presbiteriana do Caiçara</h3><p data-i18n="teacherDesc">Preparação de aulas e compartilhamento de conhecimento em um ambiente de ensino. Experiência que fortalece a comunicação, a escuta e a atenção às diferentes formas de aprender.</p><div class="experience-tags"><span data-i18n="teacherTag1">Ensino</span><span data-i18n="teacherTag2">Comunicação</span><span data-i18n="teacherTag3">Organização</span></div></div></article>
+      <article class="experience-entry"><p class="experience-date" data-i18n="volunteerDate">2022-2025</p><div class="experience-body"><h2 data-i18n="volunteerTitle">Voluntariado · organização de eventos</h2><h3>Companhia UmDois</h3><p data-i18n="volunteerDesc">Participação na organização e no planejamento de eventos para acampamentos. Uma vivência de colaboração, cuidado com os participantes e acompanhamento de atividades em equipe.</p><div class="experience-tags"><span data-i18n="volunteerTag1">Planejamento</span><span data-i18n="volunteerTag2">Trabalho em equipe</span><span data-i18n="volunteerTag3">Voluntariado</span></div><a class="social-icon" href="https://www.instagram.com/ciaumdois/" target="_blank" rel="noopener noreferrer" aria-label="Instagram da Companhia UmDois"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><rect x="2.5" y="2.5" width="19" height="19" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.7" cy="6.4" r="1" fill="currentColor" stroke="none"/></svg></a></div></article>
+    </div>
+  </main>
+  <!-- Rodapé do site -->
+  <footer class="site-footer"><span>COMPUTER SCIENCE</span><span>© 2026 Ana Tancredi</span></footer>
+</body>
+</html>

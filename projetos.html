@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <!-- Responsividade-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Projetos de Ana Luiza Tancredi em Ciência da Computação.">
+  <title>Ana Tancredi | Projetos</title>
+  <!-- Usei o CSS e o JavaScript já existentes no portfólio -->
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">Ana Tancredi</a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav" data-i18n="menu">Menu</button>
+    <nav id="main-nav" class="main-nav" aria-label="Navegação principal">
+      <a href="index.html" data-i18n="navHome">HOME</a>
+      <!-- Links que levam às páginas do portfólio -->
+      <a href="curriculo.html" data-i18n="navResume">CURRÍCULO</a>
+      <a class="active" aria-current="page" href="projetos.html" data-i18n="navProjects">PROJETOS</a>
+      <a href="experiencias.html" data-i18n="navExperience">EXPERIÊNCIAS</a>
+      <a href="contato.html" data-i18n="navContact">CONTATO</a>
+    </nav>
+    <div class="languages" aria-label="Idioma">
+      <button type="button" class="selected" data-lang="pt" aria-pressed="true">PT</button>
+      <button type="button" data-lang="en" aria-pressed="false">EN</button>
+    </div>
+  </header>
+  <main class="projects-page">
+    <!-- Página Projetos: todos os projetos aparecem na mesma linha do tempo -->
+    <h1 class="script-title brush projects-heading" data-i18n="projectsTitle">Projetos</h1>
+    <div class="project-timeline">
+      <!-- MediFind: descrição e imagem do projeto -->
+      <article class="project-entry" id="medifind">
+        <div class="project-date" data-i18n="medifindDate">Em desenvolvimento/2026</div>
+        <div class="project-body">
+          <h2 data-i18n="medifindTitle">MediFind - Plataforma de Busca e Agendamento de Consultas Médicas</h2>
+          <div class="project-layout">
+            <div class="project-description">
+              <p data-i18n="medifindDesc">Desenvolvimento de uma plataforma web voltada a facilitar a busca por médicos e o agendamento de consultas, permitindo aos pacientes encontrar profissionais por especialidade, localização e plano de saúde. O sistema contempla funcionalidades de cadastro e gerenciamento de pacientes e dependentes, consulta de horários disponíveis, agendamentos e avaliações de profissionais.</p>
+              <p data-i18n="medifindTech">Áreas trabalhadas: Front-End, Desenvolvimento Web, UX/UI, prototipação e modelagem de dados.</p>
+              <!-- Não incluímos ícone GitHub, projeto em andamento -->
+            </div>
+            <div class="project-visuals"><img class="project-image medifind-image" src="assets/medifind-logo.png" alt="Logotipo do projeto MediFind"></div>
+          </div>
+        </div>
+      </article>
+      <!-- Arduino: descrição, imagem e redirecionamento para o GitHub -->
+      <article class="project-entry" id="arduino">
+        <div class="project-date" data-i18n="arduinoDate">Julho/2026</div>
+        <div class="project-body">
+          <h2 data-i18n="arduinoTitle">Arduino Bob-it - Jogo Interativo</h2>
+          <div class="project-layout">
+            <div class="project-description">
+              <p data-i18n="arduinoDesc">Desenvolvimento de um jogo interativo com Arduino, inspirado no Bop It, que desafia o jogador a executar ações sorteadas utilizando botões, sensor de movimento e potenciômetro. O sistema utiliza um display LCD, LEDs e efeitos sonoros para fornecer feedback em tempo real. A cada acerto, a pontuação aumenta e o tempo de resposta diminui, tornando o jogo progressivamente mais desafiador.</p>
+              <p data-i18n="arduinoTech">Tecnologias: Arduino, C/C++, sensores e componentes eletrônicos.</p>
+              <!-- target abre o GitHub em outra aba, rel protege a página -->
+              <a class="project-social" href="https://github.com/anatancredi-afk/ProjetoFinal-TI.1" target="_blank" rel="noopener noreferrer" aria-label="Abrir repositório do Arduino Bob-it no GitHub"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 .8a11.2 11.2 0 0 0-3.54 21.83c.56.1.76-.24.76-.54v-2.1c-3.1.68-3.75-1.31-3.75-1.31-.5-1.29-1.24-1.64-1.24-1.64-1.01-.69.08-.68.08-.68 1.13.08 1.72 1.15 1.72 1.15 1 .1.77 2.21 3.23 1.48.1-.73.4-1.22.72-1.5-2.46-.28-5.05-1.23-5.05-5.46 0-1.2.43-2.19 1.14-2.97-.11-.28-.49-1.4.11-2.93 0 0 .94-.3 3.04 1.14a10.6 10.6 0 0 1 5.53 0c2.1-1.44 3.04-1.14 3.04-1.14.6 1.53.22 2.65.11 2.93.72.78 1.14 1.77 1.14 2.97 0 4.24-2.59 5.18-5.06 5.46.4.35.76 1.02.76 2.05v3.04c0 .3.2.64.77.54A11.2 11.2 0 0 0 12 .8Z"/></svg></a>
+            </div>
+            <div class="project-visuals"><img class="project-image arduino-image" src="assets/arduino-bobit.png" alt="Montagem eletrônica do jogo Arduino Bob-it"></div>
+          </div>
+        </div>
+      </article>
+      <!-- Casa Irmão Sol: descrição, imagens e redirecionamento para o LinkedIn -->
+      <article class="project-entry" id="irmao-sol">
+        <div class="project-date" data-i18n="solDate">Junho/2026</div>
+        <div class="project-body">
+          <h2 data-i18n="solTitle">Conscientização casa de acolhimento</h2>
+          <div class="project-layout">
+            <div class="project-description">
+              <p data-i18n="solDesc">Projeto de extensão universitária desenvolvido na Casa Irmão Sol, em Belo Horizonte, com o objetivo de promover o uso consciente e seguro da tecnologia entre adolescentes em situação de vulnerabilidade social. A iniciativa envolveu planejamento e realização de oficinas interativas sobre segurança digital, oportunidades profissionais na área de tecnologia e introdução à lógica de programação, utilizando Minecraft e Blockly Games como ferramentas educativas.</p>
+              <p data-i18n="solTech">Ferramentas utilizadas: Canva, Minecraft e Blockly Games.</p>
+              <a class="project-social" href="https://lnkd.in/p/daR64pnn" target="_blank" rel="noopener noreferrer" aria-label="Ver publicação sobre a Casa Irmão Sol no LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.35V9h3.414v1.561h.049c.476-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286ZM5.337 7.433a2.062 2.062 0 1 1 0-4.124 2.062 2.062 0 0 1 0 4.124Zm1.782 13.019H3.555V9h3.564v11.452ZM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003Z"/></svg></a>
+            </div>
+            <div class="project-visuals"><img class="project-image sol-photo" src="assets/casa-irmao-sol.jpg" alt="Equipe durante a atividade de extensão na Casa Irmão Sol"><img class="project-image sol-logo" src="assets/irmao-sol-logo.png" alt="Logotipo da Associação Irmão Sol"></div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </main>
+  <!-- Um único rodapé ao final da linha do tempo -->
+  <footer class="site-footer"><span>COMPUTER SCIENCE</span><span>© 2026 Ana Tancredi</span></footer>
+</body>
+</html>

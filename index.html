@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <!-- Repsonsividade -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfólio de Ana Luiza Tancredi, estudante de Ciência da Computação.">
+  <title>Ana Tancredi | Home</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- Cabeçalho único: permanece visível ao rolar a Home. -->
+  <header class="site-header">
+    <a class="brand" href="index.html">Ana Tancredi</a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav" data-i18n="menu">Menu</button>
+    <nav id="main-nav" class="main-nav" aria-label="Navegação principal">
+      <a class="active" aria-current="page" href="index.html" data-i18n="navHome">HOME</a>
+      <!-- Links que levam às páginas do portfólio -->
+      <a href="curriculo.html" data-i18n="navResume">CURRÍCULO</a>
+      <a href="projetos.html" data-i18n="navProjects">PROJETOS</a>
+      <a href="experiencias.html" data-i18n="navExperience">EXPERIÊNCIAS</a>
+      <a href="contato.html" data-i18n="navContact">CONTATO</a>
+    </nav>
+    <div class="languages" aria-label="Idioma">
+      <button type="button" class="selected" data-lang="pt" aria-pressed="true">PT</button>
+      <button type="button" data-lang="en" aria-pressed="false">EN</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Home: apresentação, foto e links para as seções abaixo -->
+    <section class="intro section" id="inicio">
+      <aside class="intro-sidebar">
+        <figure class="portrait">
+          <img src="assets/foto-ana.jpeg" alt="Fotografia de Ana Luiza Tancredi">
+          <figcaption data-i18n="course">CIÊNCIA DA COMPUTAÇÃO</figcaption>
+        </figure>
+        <nav class="section-nav" aria-label="Seções da Home">
+          <a href="#habilidades" data-i18n="skills">Habilidades</a>
+          <a href="#curiosidades" data-i18n="curiosities">Curiosidades</a>
+          <a href="#interesses" data-i18n="interests">Interesses</a>
+          <a href="#certificados" data-i18n="certificates">Certificados e Prêmios</a>
+        </nav>
+      </aside>
+      <div class="intro-content">
+        <h1 class="script-title brush" data-i18n="welcome">Bem-vindo</h1>
+        <p data-i18n="about1">Sou Ana Luiza Tancredi, estudante de Ciência da Computação na PUC Minas, onde iniciei minha trajetória acadêmica em 2026.</p>
+        <p data-i18n="about2">Sempre tive afinidade com as ciências exatas e interesse pela resolução de problemas, especialmente quando envolvem criatividade e diferentes formas de pensar. Ao ingressar na graduação, descobri a amplitude da computação e as diversas possibilidades de atuação que a área oferece, o que despertou ainda mais meu entusiasmo pela profissão.</p>
+        <p data-i18n="about3">Busco desenvolver continuamente meus conhecimentos técnicos, explorar diferentes áreas da tecnologia e adquirir experiências práticas que contribuam para minha formação e crescimento profissional.</p>
+      </div>
+    </section>
+
+    <!-- Habilidades: cartões com as habilidades técnicas, pessoais e idiomas -->
+    <section class="section content-section" id="habilidades">
+      <h2 class="script-title" data-i18n="skills">Habilidades</h2>
+      <div class="skills-grid">
+        <article class="skill-card">
+          <h3>HARD SKILLS</h3>
+          <ul class="icon-list">
+            <li><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m8 8-4 4 4 4m8-8 4 4-4 4M14 5l-4 14"/></svg> C/C++</li><li><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 18h9a4 4 0 0 0 0-8h-1M7 4v9a4 4 0 0 0 8 0V4M5 21h14"/></svg> Java</li><li><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 5h18v14H3zM8 9l-3 3 3 3m8-6 3 3-3 3"/></svg> HTML/CSS</li><li><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="m12 7 3 5-3 5-3-5z"/></svg> Scrum</li><li><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="5" height="16" rx="1"/><rect x="10" y="4" width="5" height="10" rx="1"/><rect x="17" y="4" width="4" height="13" rx="1"/></svg> Kanban</li>
+          </ul>
+        </article>
+        <article class="skill-card">
+          <h3>SOFT SKILLS</h3>
+          <ul class="icon-list">
+            <li><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16v10H4zM4 9l8 6 8-6"/></svg> <span data-i18n="soft1">Boa comunicação em relacionamentos interpessoais</span></li>
+            <li><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 3a6 6 0 0 0-3 11v4h12v-4a6 6 0 0 0-3-11M9 22h6M10 18v-4h4v4"/></svg> <span data-i18n="soft2">Raciocínio lógico</span></li>
+            <li><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16v12H4zM8 10h8m-8 4h5"/><path d="M8 18v3m8-3v3"/></svg> <span data-i18n="soft3">Comunicação verbal</span></li>
+            <li><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 3v4m10-4v4M4 8h16v13H4zM4 12h16"/></svg> <span data-i18n="soft4">Organização e planejamento</span></li>
+            <li><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l4 2"/></svg> <span data-i18n="soft5">Gestão de tempo</span></li>
+            <li><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="6" r="3"/><path d="M5 21v-3a7 7 0 0 1 14 0v3M8 16l4-3 4 3"/></svg> <span data-i18n="soft6">Liderança</span></li>
+            <li><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M5 19l3-1 11-11-2-2L6 16zM4 21h16"/></svg> <span data-i18n="soft7">Boa escrita</span></li>
+          </ul>
+        </article>
+        <article class="skill-card languages-card">
+          <h3 data-i18n="languagesHeading">IDIOMAS</h3>
+          <ul class="icon-list">
+            <li><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c-5 5-5 13 0 18M12 3c5 5 5 13 0 18"/></svg> <span data-i18n="portuguese">Português — Nativo</span></li>
+            <li><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v14H4zM8 9h8M8 13h5M8 17h8"/></svg> <span data-i18n="english">Inglês — Avançado</span></li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- Interesses: cartões com áreas da computação que quero explorar -->
+    <section class="section content-section" id="interesses">
+      <h2 class="script-title" data-i18n="interests">Interesses</h2>
+      <div class="interest-grid">
+        <article class="interest-card">
+          <span class="mini-symbol" aria-hidden="true"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m16 18 6-6-6-6M8 6l-6 6 6 6M14.5 4l-5 16"/></svg></span>
+          <h3 data-i18n="interest1Title">Desenvolvimento de Software</h3>
+          <p data-i18n="interest1Text">Da ideia à aplicação: entender problemas, experimentar soluções e escrever código cada vez mais claro.</p>
+          <small data-i18n="interest1Tags">Lógica · Aplicações · Boas práticas</small>
+        </article>
+        <article class="interest-card">
+          <span class="mini-symbol" aria-hidden="true"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M3 5v14a9 3 0 0 0 18 0V5M3 12a9 3 0 0 0 18 0"/></svg></span>
+          <h3 data-i18n="interest2Title">Banco de Dados</h3>
+          <p data-i18n="interest2Text">Organizar informações e compreender como dados bem estruturados apoiam soluções úteis e confiáveis.</p>
+          <small data-i18n="interest2Tags">Modelagem · Consultas · Organização</small>
+        </article>
+        <article class="interest-card">
+          <span class="mini-symbol" aria-hidden="true"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="4" width="14" height="18" rx="2"/><path d="M9 4.5h6M9 11h6M9 15h6"/></svg></span>
+          <h3 data-i18n="interest3Title">Gestão de Projetos</h3>
+          <p data-i18n="interest3Text">Conectar pessoas e tarefas, acompanhando o desenvolvimento de um projeto com colaboração e propósito.</p>
+          <small data-i18n="interest3Tags">Scrum · Kanban · Trabalho em equipe</small>
+        </article>
+        <article class="interest-card">
+          <span class="mini-symbol" aria-hidden="true"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 18V6a4 4 0 0 0-7.5-2 4 4 0 0 0-1 6 4 4 0 0 0 1 7A4 4 0 0 0 12 18Zm0 0V6a4 4 0 0 1 7.5-2 4 4 0 0 1 1 6 4 4 0 0 1-1 7A4 4 0 0 1 12 18Z"/><path d="M8 9c2 0 3 1 4 3m4-3c-2 0-3 1-4 3"/></svg></span>
+          <h3>Machine Learning (AI)</h3>
+          <p data-i18n="interest4Text">Interesse em aprender como modelos aprendem com dados e explorar suas aplicações na resolução de problemas.</p>
+          <small data-i18n="interest4Tags">Aprendizado · Dados · Aplicações</small>
+        </article>
+        <article class="interest-card">
+          <span class="mini-symbol" aria-hidden="true"><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></svg></span>
+          <h3>Cyber Security</h3>
+          <p data-i18n="interest5Text">Interesse em explorar princípios de segurança da informação e aprender práticas que ajudam a proteger dados e sistemas digitais.</p>
+          <small data-i18n="interest5Tags">Segurança · Dados · Práticas</small>
+        </article>
+      </div>
+    </section>
+
+    <!-- Curiosidades: informações pessoais organizadas em blocos -->
+    <section class="section content-section" id="curiosidades">
+      <h2 class="script-title" data-i18n="curiosities">Curiosidades</h2>
+      <p class="section-subtitle" data-i18n="curiositySubtitle">Interesses e pequenas coisas que também fazem parte de quem eu sou.</p>
+      <div class="curiosity-grid">
+        <article><h3><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5C6 4.5 9 4.5 12 6v15c-3-1.5-6-1.5-8-.5zM20 5.5c-2-1-5-1-8 .5v15c3-1.5 6-1.5 8-.5z"/></svg> <span data-i18n="curiosity1Title">Estudos</span></h3><p data-i18n="curiosity1Text">Meus assuntos de interesse para estudo são teologia e apologética.</p></article>
+        <article><h3><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h4l3-7 5 14 3-7h5"/></svg> <span data-i18n="curiosity2Title">Esportes</span></h3><p data-i18n="curiosity2Text">Movimento também é parte da minha rotina. Sempre amei atividade física e já pratiquei mais de 5 esportes diferentes.</p></article>
+        <article><h3><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8L12 21l8.8-8.6a5.5 5.5 0 0 0 0-7.8Z"/></svg> <span data-i18n="curiosity3Title">Ensino / Voluntariado</span></h3><p data-i18n="curiosity3Text">Desde 2023 atuo como professora de Escola Bíblica na minha igreja local.</p></article>
+        <article><h3><svg class="ui-icon" viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a9 9 0 1 0 0 18h1.5a2.5 2.5 0 0 0 2-4 2 2 0 0 1 1.7-3H19a3 3 0 0 0 3-3c0-4.5-4.5-8-10-8Z"/><circle cx="7.5" cy="11" r=".7"/><circle cx="10" cy="7" r=".7"/><circle cx="15" cy="7" r=".7"/><circle cx="18" cy="10.5" r=".7"/></svg> <span data-i18n="curiosity4Title">Hobbies</span></h3><p data-i18n="curiosity4Text">Desenhar e tocar violão são meus espaços de criatividade.</p></article>
+      </div>
+    </section>
+
+    <!-- Certificados: lista de cursos e reconhecimentos acadêmicos -->
+    <section class="section content-section certificates-section" id="certificados">
+      <h2 class="script-title" data-i18n="certificates">Certificados e Prêmios</h2>
+      <div class="certificate-list">
+        <article class="certificate"><div><h3 data-i18n="cert1Title">Destaque Acadêmico — Ciência da Computação</h3><strong data-i18n="cert1Org">Pontifícia Universidade Católica de Minas Gerais</strong><span>2026/1</span></div><p data-i18n="cert1Desc">Reconhecimento concedido pela PUC Minas aos estudantes com melhor aproveitamento acadêmico no semestre, considerando o desempenho nas disciplinas, as indicações dos professores e critérios como comprometimento, participação e colaboração nas atividades acadêmicas.</p></article>
+        <article class="certificate"><div><h3 data-i18n="cert2Title">Curso Professor de Escola Bíblica</h3><strong>Seminário Teológico Presbiteriano Rev. Denoel Nicodemus Eller</strong><span>2025</span></div><p data-i18n="cert2Desc">Formação voltada ao ensino bíblico, com foco no desenvolvimento de conhecimentos e habilidades para a atuação como professora de Escola Bíblica.</p></article>
+        <article class="certificate"><div><h3 data-i18n="cert3Title">Curso Intensivo de Inglês</h3><strong>WEC</strong><span>2024</span></div><p data-i18n="cert3Desc">Curso intensivo de língua inglesa com foco no desenvolvimento da comunicação e na ampliação do vocabulário, incluindo terminologias e expressões voltadas ao contexto de missões cristãs e evangelismo.</p></article>
+        <article class="certificate"><div><h3 data-i18n="cert4Title">Curso de Liderança de Células</h3><strong>Oitava Igreja Presbiteriana</strong><span>2023</span></div><p data-i18n="cert4Desc">Formação em princípios de liderança, organização de grupos, comunicação interpessoal e desenvolvimento de atividades em equipe.</p></article>
+        <article class="certificate"><div><h3 data-i18n="cert5Title">Curso de Inglês (Programa Completo)</h3><strong>Number One Inglês Completo</strong><span>2012–2021</span></div><p data-i18n="cert5Desc">Conclusão de programa completo de formação em língua inglesa, com certificação de nível avançado.</p></article>
+        <article class="certificate"><div><h3 data-i18n="cert6Title">Intercâmbio (Curso de Inglês intensivo)</h3><strong>Ardmore Language Schools</strong><span>2020</span></div><p data-i18n="cert6Desc">Certificação obtida pela conclusão de um curso de língua inglesa realizado durante um intercâmbio educacional de um mês na Inglaterra, proporcionando imersão no idioma, aprimoramento das habilidades de comunicação e vivência intercultural.</p></article>
+      </div>
+    </section>
+  </main>
+
+  <!-- Rodapé aparece uma vez, ao final de toda a Home. -->
+  <footer class="site-footer"><span>COMPUTER SCIENCE</span><span>© 2026 Ana Tancredi</span></footer>
+</body>
+</html>

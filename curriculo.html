@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <!-- Permite a responsividade -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Currículo de Ana Luiza Tancredi, estudante de Ciência da Computação.">
+  <title>Ana Tancredi | Currículo</title>
+  <!-- Reaproveitei o mesmo CSS e JS para manter a identidade do site -->
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <!-- O cabeçalho é igual ao da Home; apenas Currículo fica destacado -->
+  <header class="site-header">
+    <a class="brand" href="index.html">Ana Tancredi</a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav" data-i18n="menu">Menu</button>
+    <nav id="main-nav" class="main-nav" aria-label="Navegação principal">
+      <a href="index.html" data-i18n="navHome">HOME</a>
+      <!-- Links que levam às páginas do portfólio -->
+      <a class="active" aria-current="page" href="curriculo.html" data-i18n="navResume">CURRÍCULO</a>
+      <a href="projetos.html" data-i18n="navProjects">PROJETOS</a>
+      <a href="experiencias.html" data-i18n="navExperience">EXPERIÊNCIAS</a>
+      <a href="contato.html" data-i18n="navContact">CONTATO</a>
+    </nav>
+    <div class="languages" aria-label="Idioma">
+      <button type="button" class="selected" data-lang="pt" aria-pressed="true">PT</button>
+      <button type="button" data-lang="en" aria-pressed="false">EN</button>
+    </div>
+  </header>
+  <main>
+    <!-- Página Currículo: título, botão de download e visualização do PDF -->
+    <section class="resume-page" aria-labelledby="resume-title">
+      <h1 id="resume-title" class="script-title brush" data-i18n="resumeTitle">Currículo</h1>
+      <!-- download sugere ao navegador salvar o arquivo PDF. -->
+      <a class="resume-download" href="assets/curriculo-publico.pdf" download="Curriculo_Ana_Tancredi.pdf">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M12 3v12m-4-4 4 4 4-4M5 17v3h14v-3"/></svg>
+        <span data-i18n="downloadResume">Baixar currículo em PDF</span>
+      </a>
+      <!-- iframe exibe o PDF na própria página, sem transformar em imagem -->
+      <iframe class="resume-preview" src="assets/curriculo-publico.pdf#toolbar=0" title="Visualização do currículo em PDF" data-i18n-title="resumeFrameTitle"></iframe>
+      <p class="resume-fallback" data-i18n="resumeFallback">Se o PDF não aparecer, use o botão acima para abri-lo ou baixá-lo.</p>
+    </section>
+  </main>
+  <!-- Rodapé único no fim desta página. -->
+  <footer class="site-footer"><span>COMPUTER SCIENCE</span><span>© 2026 Ana Tancredi</span></footer>
+</body>
+</html>
