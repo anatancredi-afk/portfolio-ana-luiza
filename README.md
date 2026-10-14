@@ -1,4 +1,4 @@
-# Portfólio Profissional — Ana Luiza Tancredi
+# Portifólio Profissional — Ana Luiza Tancredi
 
 > Site pessoal desenvolvido para apresentar minha formação, habilidades, interesses, projetos e experiências acadêmicas.
 >
