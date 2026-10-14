@@ -61,6 +61,22 @@ A interface foi desenvolvida com identidade visual em tons de roxo e layout resp
 
 ---
 
+## 🤖 Uso de Inteligência Artificial
+
+Durante o desenvolvimento deste portfólio, utilizei o ChatGPT como ferramenta de apoio ao aprendizado e à implementação do projeto.
+
+A inteligência artificial foi utilizada para:
+
+- Revisar códigos HTML, CSS e JavaScript e auxiliar na identificação de erros.
+- Esclarecer dúvidas sobre conceitos e funcionalidades das tecnologias utilizadas.
+- Sugerir e auxiliar na elaboração de trechos de código e melhorias na interface.
+- Apoiar a organização, a responsividade e a apresentação visual do site.
+- Auxiliar na revisão e organização da documentação do projeto.
+
+As sugestões foram analisadas e adaptadas às necessidades do portfólio durante o processo de desenvolvimento.
+
+---
+  
 ## 📦 Dependências, Bibliotecas e Frameworks
 
 O projeto **não utiliza frameworks JavaScript, bibliotecas de componentes ou dependências instaladas por npm**.
